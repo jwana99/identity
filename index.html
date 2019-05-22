@@ -53,7 +53,7 @@
 
         .photo figcaption {
             margin-top: 10px;
-            font-family: 'Indie Flower', cursive;
+            /*font-family: 'Indie Flower', cursive;*/
             font-size: 24px;
             font-weight: bold;
             text-align: center;
@@ -108,7 +108,6 @@
 <body class="bg-dark">
 <div id="el">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -134,10 +133,52 @@
 
     <div class="container">
         <div v-show="displayMain" class="card mt-5">
-            press smth to get to know me
+            <h2 class="text-center m-4">What i value the most</h2>
+            <div class="row m-2">
+                <div class="col"><h3 class="text-center">Intellect</h3>
+                <p>I think a lot and to understand something i need to know the reasons.</p>
+                </div>
+                <div class="col"><h3 class="text-center">Renovation</h3>
+                <p>It is important for me to be innovative and do new things from time to time.</p>
+                </div>
+                <div class="col"><h3 class="text-center">Serenity</h3>
+                <p>It's not about being cold but being calm even in heated situations.</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <img src="https://i.giphy.com/media/iQmhMDuNQWuWI/giphy.webp"/>
+
+                </div>
+            </div>
+
         </div>
         <div v-show="displayHome" class="card mt-5">
-            home
+            <h4 class="text-center m-4">Me at home </h4>
+            <div class="row mt-2">
+                <div class="col">
+                    <figure v-bind:style="{ background: activeColor }" class="photo">
+                        <img src="home/sleeping.JPG" />
+                        <figcaption>I sleep on the couch accidentally a lot</figcaption>
+                    </figure>
+                    <figure v-bind:style="{ background: activeColor }" class="photo">
+                        <img src="home/watch.JPG" />
+                        <figcaption>45% of my time at home is spent on watching movies and shows</figcaption>
+                    </figure>
+                    <figure v-bind:style="{ background: activeColor }" class="photo">
+                        <img src="home/program.JPG" />
+                        <figcaption>49% of my time at home is spent on programming</figcaption>
+                    </figure>
+
+                    <figure v-bind:style="{ background: activeColor }" class="photo">
+                        <img src="home/photo_2019-05-22_22-52-43.jpg"/>
+                        <figcaption>I sleep while reading too</figcaption>
+                    </figure>
+
+                </div>
+            </div>
+
         </div>
 
         <div v-show="displayCollege" class="card mt-5">
@@ -175,49 +216,56 @@
             <div class="row mt-2">
                 <div class="col">
                     <figure v-bind:style="{ background: activeColor }" class="photo">
-                        <img src="other/_MG_4108.jpg" alt="Hippo"/>
+                        <img src="other/codelab.jpg" alt="Hippo"/>
                         <figcaption>Me at codelab "programming boot-camp"</figcaption>
                     </figure>
                     <figure v-bind:style="{ background: activeColor }" class="photo">
-                        <img src="other/photo_2019-05-22_13-22-25.jpg" alt="Garth"/>
+                        <img src="other/almutanabi.jpg" alt="Garth"/>
                         <figcaption>Me at Almutanabi</figcaption>
                     </figure>
+                    <figure v-bind:style="{ background: activeColor }" class="photo">
+                        <img src="other/ylp.JPG" alt="Garth"/>
+                        <figcaption>Me at YLP, also hey Istabraq :D</figcaption>
+                    </figure>
+
                     <figure v-bind:style="{ background: activeColor }" class="photo">
                         <img src="other/IMG_0747.JPG" alt="Timothy"/>
                         <figcaption>Me at limitless "Communicating using English boot-camp done by me and my friends"
                         </figcaption>
                     </figure>
                     <figure v-bind:style="{ background: activeColor }" class="photo">
-                        <img src="other/photo_2019-05-22_13-22-09.jpg" alt="Gerald"/>
+                        <img src="other/tm.jpg" alt="Gerald"/>
                         <figcaption>Me at Baghdad toastmasters club</figcaption>
                     </figure>
-                    <figure v-bind:style="{ background: activeColor }" class="photo">
-                        <img src="other/photo_2019-05-22_13-22-39.jpg" alt="Garth"/>
-                        <figcaption>Me at the cinema</figcaption>
-                    </figure>
+
 
                 </div>
             </div>
             <div class="row">
                 <div class="col">
                     <figure v-bind:style="{ background: activeColor }" class="photo">
-                        <img src="other/image_2019-05-22_00-10-25.png" alt="Diana"/>
+                        <img src="other/car.png"/>
                         <figcaption>Me driving without a licence</figcaption>
                     </figure>
 
                     <figure v-bind:style="{ background: activeColor }" class="photo">
-                        <img src="other/photo_2019-05-22_13-22-20.jpg" alt="Garth"/>
+                        <img src="other/escape.jpg"/>
                         <figcaption>Me winning</figcaption>
                     </figure>
 
                     <figure v-bind:style="{ background: activeColor }" class="photo">
-                        <img src="other/photo_2019-05-22_13-22-50.jpg" alt="Garth"/>
+                        <img src="other/guitar.jpg"/>
                         <figcaption>Me pretending i can do stuff</figcaption>
                     </figure>
                     <figure v-bind:style="{ background: activeColor }" class="photo">
-                        <img src="other/photo_2019-05-22_13-23-01.jpg" alt="Garth"/>
+                        <img src="other/image_2019-05-22_20-54-14.png"/>
                         <figcaption>Me at Hultprize</figcaption>
                     </figure>
+                    <figure v-bind:style="{ background: activeColor }" class="photo">
+                        <img src="other/cinema.jpg"/>
+                        <figcaption>Me at the cinema</figcaption>
+                    </figure>
+
                 </div>
             </div>
 
