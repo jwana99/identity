@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
           integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Raleway', sans-serif;
@@ -102,17 +102,27 @@
             }
         }
 
+        .value {
+            font-family: 'Pacifico', cursive;
+            background: -webkit-linear-gradient(#842786, #502970);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 40px;
+        }
+
+        .gif img{
+            width: 100%;
+            height: auto;
+            position: relative;
+        }
 
     </style>
 </head>
 <body class="bg-dark">
 <div id="el">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+
+        <div id="navbarNav">
             <ul class="navbar-nav">
 
                 <li class="nav-item">
@@ -133,23 +143,30 @@
 
     <div class="container">
         <div v-show="displayMain" class="card mt-5">
-            <h2 class="text-center m-4">What i value the most</h2>
+            <h1 class="text-center m-4">What i value the most</h1>
             <div class="row m-2">
-                <div class="col"><h3 class="text-center">Intellect</h3>
-                <p>I think a lot and to understand something i need to know the reasons.</p>
+                <div class="col"><h4 class="text-center value">Intellect</h4>
+                    <p>I think a lot and to understand something i need to know the reasons.</p>
                 </div>
-                <div class="col"><h3 class="text-center">Renovation</h3>
-                <p>It is important for me to be innovative and do new things from time to time.</p>
+                <div class="col"><h4 class="text-center value">Renovation</h4>
+                    <p>It is important for me to be innovative and do new things from time to time.</p>
                 </div>
-                <div class="col"><h3 class="text-center">Serenity</h3>
-                <p>It's not about being cold but being calm even in heated situations.</p>
+                <div class="col"><h4 class="text-center value">Serenity</h4>
+                    <p>It's not about being cold but being calm even in heated situations.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col m-3">
+                    <h4 class="text-center">Now you can go and click the tabs in the top to know more about me, enjoy ;)</h4>
                 </div>
             </div>
 
             <div class="row justify-content-center">
-                <div class="col-auto">
-                    <img src="https://i.giphy.com/media/iQmhMDuNQWuWI/giphy.webp"/>
-
+                <div class="col-auto mb-2">
+                    <div class="gif">
+                        <img src="https://i.giphy.com/media/iQmhMDuNQWuWI/giphy.webp"/>
+                    </div>
                 </div>
             </div>
 
@@ -159,15 +176,15 @@
             <div class="row mt-2">
                 <div class="col">
                     <figure v-bind:style="{ background: activeColor }" class="photo">
-                        <img src="home/sleeping.JPG" />
+                        <img src="home/sleeping.JPG"/>
                         <figcaption>I sleep on the couch accidentally a lot</figcaption>
                     </figure>
                     <figure v-bind:style="{ background: activeColor }" class="photo">
-                        <img src="home/watch.JPG" />
+                        <img src="home/watch.JPG"/>
                         <figcaption>45% of my time at home is spent on watching movies and shows</figcaption>
                     </figure>
                     <figure v-bind:style="{ background: activeColor }" class="photo">
-                        <img src="home/program.JPG" />
+                        <img src="home/program.JPG"/>
                         <figcaption>49% of my time at home is spent on programming</figcaption>
                     </figure>
 
